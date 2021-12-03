@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.ProductsFragment"
+    android:orientation="vertical"
+
+     >
+
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:text="Products"
+        android:textColor="@color/bluee"
+        android:textSize="40dp"
+        android:shadowDx="0"
+        android:shadowDy="3"
+        android:shadowRadius="10"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnCart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/productRecycler"/>
+
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"
+        app:backgroundTint="@null"
+        android:background="@color/bluee"
+        android:fontFamily="monospace"
+        android:text="Cart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/tvtitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvtitle"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

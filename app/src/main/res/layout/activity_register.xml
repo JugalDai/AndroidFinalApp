@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+   >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:text="Registration Form"
+        android:textColor="@color/bluee"
+        android:textSize="20sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etname"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Name"
+            android:textSize="20sp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:fontFamily="sans-serif"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etemail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="88dp"
+            android:hint="Email"
+            android:textSize="20sp"
+            android:backgroundTint="@color/cardview_light_background"
+            android:fontFamily="sans-serif"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etcontactno"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="88dp"
+            android:hint="Contact no."
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:backgroundTint="@color/cardview_light_background"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etpassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLogin"
+            android:fontFamily="sans-serif"
+            android:backgroundTint="@color/cardview_light_background"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etcpassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="88dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/etEmail"
+            tools:layout_editor_absoluteX="5dp"
+            android:fontFamily="sans-serif"
+            android:backgroundTint="@color/cardview_light_background"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:text="sign up"
+        android:background="@color/bluee"
+        android:layout_gravity="right"
+        android:textColor="@color/blackk"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
+
+</LinearLayout >
+</ScrollView>

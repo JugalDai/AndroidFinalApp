@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_gravity="center"
+  >
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Profile"
+        android:textAllCaps="true"
+        android:textColor="@color/bluee"
+        android:textSize="30sp" />
+    <TextView
+        android:id="@+id/tvusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/bluee"
+        android:textSize="20dp"
+        android:layout_marginTop="95dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="@color/bluee"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/tvcontactno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact No"
+        android:textColor="@color/bluee"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>
